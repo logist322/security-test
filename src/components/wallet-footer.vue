@@ -20,6 +20,10 @@ export default {
   align-items: center;
   padding: 25px 0;
   border-top: 2px solid rgba(28, 28, 28, 0.1);
+
+  @media (max-width: 769px) {
+    justify-content: space-between;
+  }
 }
 
 .footer__title {
@@ -28,6 +32,10 @@ export default {
   font-family: "Inter", "Arial", sans-serif;
   font-size: 22px;
   font-weight: 600;
+
+  @media (max-width: 769px) {
+    font-size: 16px;
+  }
 }
 
 .footer__copyright {
@@ -38,6 +46,11 @@ export default {
   font-weight: 400;
   margin-left: 10px;
   opacity: 0.3;
+
+  @media (max-width: 769px) {
+    margin: 0;
+    font-size: 10px;
+  }
 }
 
 .footer__privacy {
@@ -49,5 +62,10 @@ export default {
   margin-left: auto;
   color: #000000;
   opacity: 0.3;
+
+  @media (max-width: 769px) {
+    margin: 0;
+    font-size: 10px;
+  }
 }
 </style>

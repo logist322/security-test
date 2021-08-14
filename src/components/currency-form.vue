@@ -10,6 +10,7 @@
         autocomplete="off"
         placeholder="Amount"
         v-model="amount"
+        size="1"
       />
       <label class="wallet-form__label" for="amount"
         >Commission {{ currency.commission.value }}
@@ -34,6 +35,7 @@
       :placeholder="currency.type === 'crypto' ? 'Address' : 'Requisites'"
       v-model="requisites"
       v-if="!depositSelected"
+      size="1"
     />
     <textarea
       class="wallet-form__input wallet-form__input--textarea"
@@ -184,6 +186,12 @@ export default {
   grid-template-columns: 1fr 1fr;
   row-gap: 25px;
   column-gap: 45px;
+
+  @media (max-width: 769px) {
+    padding: 16px;
+    grid-template-columns: 1fr;
+    row-gap: 8px;
+  }
 }
 
 .wallet-form__amount-wrap {
@@ -210,6 +218,11 @@ export default {
     resize: none;
     grid-column: 1 / -1;
   }
+
+  @media (max-width: 769px) {
+    padding: 8px;
+    font-size: 12px;
+  }
 }
 
 .wallet-form__label {
@@ -221,6 +234,11 @@ export default {
 
   span {
     color: #ff0000;
+  }
+
+  @media (max-width: 769px) {
+    margin-top: 2px;
+    font-size: 12px;
   }
 }
 
@@ -239,6 +257,11 @@ export default {
   &:disabled {
     opacity: 0.5;
     cursor: default;
+  }
+
+  @media (max-width: 769px) {
+    width: auto;
+    font-size: 14px;
   }
 }
 </style>

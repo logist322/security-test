@@ -68,6 +68,10 @@ export default {
 <style lang="scss">
 .main {
   margin: 55px 0;
+
+  @media (max-width: 769px) {
+    margin: 16px 0;
+  }
 }
 
 .main__list {
@@ -80,6 +84,11 @@ export default {
   grid-auto-flow: row dense;
   grid-column-gap: 40px;
   grid-row-gap: 30px;
+
+  @media (max-width: 769px) {
+    grid-template-columns: 1fr;
+    grid-row-gap: 8px;
+  }
 }
 
 .main__form {

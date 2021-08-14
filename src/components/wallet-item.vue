@@ -98,6 +98,11 @@ export default {
     border: 2px solid #045b98;
     box-shadow: 0 0 0 3px #045b98;
   }
+
+  @media (max-width: 769px) {
+    padding: 16px;
+    min-width: auto;
+  }
 }
 
 .wallet-item__title {
@@ -105,12 +110,21 @@ export default {
   font-family: "Inter", "Arial", sans-serif;
   font-size: 50px;
   font-weight: 600;
+
+  @media (max-width: 769px) {
+    font-size: 32px;
+  }
 }
 
 .wallet-item__buttons-wrap {
   margin-top: 30px;
   display: flex;
   column-gap: 20px;
+
+  @media (max-width: 769px) {
+    margin-top: 10px;
+    column-gap: 10px;
+  }
 }
 
 .wallet-item__button {
@@ -155,6 +169,11 @@ export default {
     &::after {
       transform: translate(-50%, -50%) rotate(-45deg);
     }
+  }
+
+  @media (max-width: 769px) {
+    padding: 10px 40px 10px 16px;
+    font-size: 12px;
   }
 }
 </style>

@@ -24,6 +24,10 @@ export default {
   display: flex;
   padding: 25px 0;
   border-bottom: 2px solid rgba(28, 28, 28, 0.1);
+
+  @media (max-width: 769px) {
+    padding: 16px 0;
+  }
 }
 
 .header__greeting {

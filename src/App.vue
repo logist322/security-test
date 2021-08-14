@@ -38,6 +38,10 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 769px) {
+    padding: 0 16px 0 76px;
+  }
 }
 
 .visually-hidden {

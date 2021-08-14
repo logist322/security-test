@@ -35,6 +35,12 @@ export default {
   align-items: center;
   padding-top: 43px;
   padding-bottom: 37px;
+
+  @media (max-width: 769px) {
+    width: 60px;
+    padding-top: 27px;
+    padding-bottom: 25px;
+  }
 }
 
 .aside__button {
